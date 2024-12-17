@@ -43,7 +43,10 @@ def callback(request):
                 # 回傳收到的文字訊息
                 line_bot_api.reply_message(
                     event.reply_token,
-                    TextSendMessage(text= txtmsg ))
+                    [TextSendMessage(text = txtmsg ),
+                    StickerSendMessage(package_id=1070, sticker_id=17842),
+                    StickerSendMessage(package_id=1070, sticker_id=17843),
+                    ])
 
         return HttpResponse()
     else:
