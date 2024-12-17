@@ -35,7 +35,9 @@ def callback(request):
 
                 currentDateAndTime = datetime.now()
                 currentTime = currentDateAndTime.strftime("%H:%M:%S")
+
                 txtmsg = "您所傳的訊息是:\n"
+                txtmsg = currentTime + "\n"
                 txtmsg += event.message.text
 
                 # 回傳收到的文字訊息
