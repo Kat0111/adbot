@@ -47,7 +47,7 @@ def callback(request):
 
                     StickerSendMessage(package_id=1070, sticker_id=17842),
                     
-                    ImageSendMessage(original_content_url='https://d3gjxtgqyywct8.cloudfront.net/o2o/image/961f8641-dcbe-4205-b75c-0246a292b6c4.jpg'),
+                    ImageSendMessage(original_content_url='https://d3gjxtgqyywct8.cloudfront.net/o2o/image/961f8641-dcbe-4205-b75c-0246a292b6c4.jpg', preview_image_url='https://d3gjxtgqyywct8.cloudfront.net/o2o/image/961f8641-dcbe-4205-b75c-0246a292b6c4.jpg'),
 
                     LocationSendMessage(title='文澡外語大學', address='Wenzao Ursuline University of Languages', latitude=22.670419222110695, longitude=120.31825742491581)
                     ])
